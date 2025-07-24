@@ -1,23 +1,6 @@
-import re
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import time
-import traceback
 from sklearn.base import BaseEstimator, TransformerMixin
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-from sklearn.linear_model import LinearRegression, ElasticNet
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.svm import SVR
-from sklearn.model_selection import KFold, RandomizedSearchCV, train_test_split
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
-from scipy.stats import randint, uniform
-import joblib
 
 class DataPreprocessor(BaseEstimator, TransformerMixin):
     """Transformer customizado para pré-processamento de dados."""
