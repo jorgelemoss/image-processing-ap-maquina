@@ -6,7 +6,7 @@
 #### Passo 1: Executar o makebuild.sh
 
 ```
-$ chmod +x makebuild.sh
+$ chmod +x makebuild.sh && ./makebuild.sh
 ```
 
 #### Passo 2: Verificar se os containers estão ativos
